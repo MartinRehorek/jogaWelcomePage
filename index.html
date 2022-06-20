@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FrontEnd Project</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <a class="logo" href="#">Joga<span>NOW</span></a>
+
+                <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open navigation">
+
+                <nav>
+                    <img id="mobile-exit" class="mobile-menu" src="images/exit.svg" alt="Close navigation">
+                    <ul class="primary-nav">
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Pricing plans</a></li>
+                    </ul>
+                    <ul class="secondary-nav">
+                        <li><a href="#">Contact us</a></li>
+                        <li class="go-premium-cta"><a href="#">Premium</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="container">
+                <div class="left-col">
+                    <p class="subhead">relax &amp; workout</p>
+                    <h1>The last Joga app you will ever need</h1>
+                    <div class="hero-cta">
+                        <a href="#" class="primary-cta">Try it out for free</a>
+                        <a href="#" class="watch-video-cta">
+                            <img src="images/watch.svg" alt="Watch a video">Watch a video
+                        </a>
+                    </div>
+                </div>
+                <img src="images/joga.webp" class="hero-img" alt="Joga image">
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <ul class="features-list">
+                    <li>Daily new content</li>
+                    <li>Personal plans</li>
+                    <li>Weight loss goals</li>
+                    <li>Sport warmups</li>
+                    <li>Premium extra features</li>
+                    <li>Others</li>
+                </ul>
+
+                <img src="images/joga.jpeg" alt="Person doing joga">
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="container">
+                <ul>
+                    <li>
+                        <img src="images/person1.jpeg" alt="Person">
+
+                        <blockquote>"Great app for warmups."</blockquote>
+                        <cite>- Tatum William</cite>
+                    </li>
+                    <li>
+                        <img src="images/person2.jpeg" alt="Person">
+
+                        <blockquote>"Keeps me mentally fine, love the premium features."</blockquote>
+                        <cite>- Michelle Portman</cite>
+                    </li>
+                    <li>
+                        <img src="images/person3.jpeg" alt="Person">
+
+                        <blockquote>"I have not found an app that creates a personalized joga workouts like JogaNOW does."</blockquote>
+                        <cite>- Nio Osaka</cite>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-left">
+                    <h2>Contact us</h2>
+
+                    <form action="">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                        <input type="submit" class="send-message-cta" value="Send message">
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d40933.2217581695!2d14.4177277!3d50.1176147!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94f20bdcf82d%3A0xe5a8f7389afd128e!2sBubensk%C3%A1%201%20-%20Offices%20and%20retail%20in%20Prague%207!5e0!3m2!1sen!2scz!4v1655733509268!5m2!1sen!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <script>
+
+            const mobileBtn = document.getElementById('mobile-cta'),
+                nav = document.querySelector('nav'),
+                mobileBtnExit = document.getElementById('mobile-exit');
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn');
+            })
+
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn');
+            })
+
+        </script>
+
+
+    </body>
+</html>
